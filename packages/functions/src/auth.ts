@@ -2,11 +2,13 @@ import { AuthHandler, LinkAdapter, Session } from "sst/node/auth";
 
 export const handler = AuthHandler({
   providers: {
-    magikLink: LinkAdapter({
+    magicLink: LinkAdapter({
       onLink: async (link, claims) => {
-        const sendEmail = async (email: string, link: string) => {};
+        const sendEmail = async (email, link: string) => {
+          console.log("Send email:", email, link);
+        };
 
-        await sendEmail(claims.email, link);
+        await sendEmail(claims, link);
         /* ------------ To Implement ------------ */
         /* This function receives a link that     */
         /* you can send over email or sms so      */
@@ -14,8 +16,9 @@ export const handler = AuthHandler({
         /* -------------------------------------- */
       },
       onSuccess: async (claims) => {
+        console.log("OnSuccess auth claims:", claims);
         const user = {
-          user: "who us this guy?",
+          userID: "who us this guy?",
         }; /** TODO: create or look up a user from your db **/
 
         // Redirects to https://example.com?token=xxx

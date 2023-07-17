@@ -1,14 +1,15 @@
 import { SSTConfig } from "sst";
-import { ExampleStack } from "./stacks/ExampleStack";
+import { MainStack } from "./stacks/MainStack";
 
 export default {
   config(_input) {
     return {
       name: "lima-fs",
       region: "us-east-1",
+      profile: "default",
     };
   },
   stacks(app) {
-    app.stack(ExampleStack);
-  }
+    app.stack(MainStack);
+  },
 } satisfies SSTConfig;

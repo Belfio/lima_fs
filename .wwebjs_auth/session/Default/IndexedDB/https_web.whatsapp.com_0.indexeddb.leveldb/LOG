@@ -1,0 +1,10 @@
+2023/07/17-01:50:15.546 a803 Creating DB /Users/alfredo/NonBackedUp/Code/lima_fs/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2023/07/17-01:50:15.552 a803 Reusing MANIFEST /Users/alfredo/NonBackedUp/Code/lima_fs/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/07/17-01:50:15.597 a803 Level-0 table #5: started
+2023/07/17-01:50:15.603 a803 Level-0 table #5: 7376 bytes OK
+2023/07/17-01:50:15.609 a803 Delete type=0 #3
+2023/07/17-01:50:15.609 a803 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/07/17-01:50:15.992 a803 Level-0 table #7: started
+2023/07/17-01:50:15.996 a803 Level-0 table #7: 15710 bytes OK
+2023/07/17-01:50:15.999 a803 Delete type=0 #4
+2023/07/17-01:50:15.999 a803 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
